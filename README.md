@@ -1,2 +1,2 @@
 # GastaoLeao
-Site para a EMEF Doutro gastão Leão
+Site para a EMEF Doutor Gastão Leão
