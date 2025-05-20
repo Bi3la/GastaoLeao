@@ -2,10 +2,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const menuHtml = `
     <div id="menu">
         <div class="menu-container">
-            <a href="Index.html"><img id="logo" src="Imagens/Icones/logo.png" alt="Logo da Escola Gastão Leão"></a>
+            <a href="index.html"><img id="logo" src="Imagens/Icones/logo.png" alt="Logo da Escola Gastão Leão"></a>
             <nav>
                 <ul>
-                    <li><a href="Index.html">Início</a></li>
+                    <li><a href="index.html">Início</a></li>
                     <li><a href="Institucional.html">Institucional</a></li>
                     <li><a href="Projetos.html">Projetos</a></li>
                 </ul>
