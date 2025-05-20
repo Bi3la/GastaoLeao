@@ -1,0 +1,244 @@
+* {
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove preenchimentos padrão */
+}
+
+body {
+  font-family: 'Coming Soon', cursive;
+}
+
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  transition: padding 0.3s ease;
+}
+
+#menu.shrink .menu-container {
+  padding: 5px 20px;
+  font-size: medium;
+}
+
+#menu.shrink nav li {
+  font-size: 14px;  /* Reduz o tamanho da fonte quando o menu encolher */
+}
+
+#logo {
+  width: 100px;
+  transition: height 0.3s ease;
+}
+
+#menu.shrink #logo {
+  width: 55px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  padding: 10px; /* Remover preenchimento padrão da lista */
+  margin: 0; /* Remover margem padrão da lista */
+  justify-content: center;
+}
+
+nav li {
+  font-size: large;
+  padding: 0;
+  margin: 15px; /* Espaço entre os itens da lista */
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #00BFFF; /* Uma cor diferente ao passar o mouse */
+}
+
+#corpo {
+  padding-top: 120px; /* ajuste conforme altura inicial do menu */
+}
+
+
+nav a {
+  color: black; /* Cor do texto dos links */
+  text-decoration: none; /* Remove sublinhado dos links */
+}
+
+.tabela_rodape{
+  border-collapse: separate;
+  border-spacing: 40px 40px; /* margem das bordas */
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: center;
+}
+
+.apresentacao{
+  width: auto;
+  height: auto;
+  overflow: hidden; /* Garante que nada ultrapasse os limites da caixa */
+  position: relative; /* Necessário para o posicionamento do conteúdo dentro */
+  display: flex;
+  justify-content:center;
+}
+
+.apresentacao h1{
+  margin-top: 9%;
+  text-align: center;
+  position: absolute;
+  text-align: center;
+  font-size: 800%;
+  color: aliceblue;
+  line-height: 1;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.caixa{
+  padding: 2%;
+  width: auto;
+  height: auto;
+  overflow: hidden; /* Garante que nada ultrapasse os limites da caixa */
+  position: relative; /* Necessário para o posicionamento do conteúdo dentro */
+  font-family: 'Coming Soon';
+  background-color: #00BFFF;
+  text-align: center;
+}
+
+.caixa1{
+  padding: 2%;
+  width: auto;
+  height: auto;
+  overflow: hidden; /* Garante que nada ultrapasse os limites da caixa */
+  position: relative; /* Necessário para o posicionamento do conteúdo dentro */
+  font-family: 'Coming Soon';
+  color: #00BFFF;
+  text-align: center;
+}
+
+.caixa1 h1{
+  color: #00BFFF;
+}
+
+.caixa1 a{
+  color: #00BFFF;
+}
+
+.texto{
+  text-align: justify;
+  margin: 10px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+h1, h2, h3{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 3;
+  text-align: center;
+  padding-left: 15%;
+  padding-right: 15%;
+  color: whitesmoke;
+}
+
+p{
+  line-height: 2;
+}
+
+.slider {
+  display: flex;
+  width: 100%;  /* A largura da slider vai ser a mesma da caixa */
+  height: 550px;
+  margin: auto;
+  position: relative;
+  background-color: whitesmoke;
+}
+
+.slider li {
+  list-style: none;
+  flex: 0 0 auto;
+}
+
+.img1 {
+  filter: blur(3px);
+  width: auto;
+  object-fit: cover;
+}
+
+.botao{
+  font-family: 'Coming Soon'; /* Fonte */
+  background-color:#00BFFF; /* Cor do fundo*/
+  border:#00BFFF; /* Cor da borda */
+  padding: 15px 32px; /* Espaçamento interno */
+  text-align: center; /* Alinhamento do texto */
+  display: inline-block; /* Permite espaçamento */
+  font-size: 16px; /* Tamanho da fonte */
+  transition: color 0.5s ease;
+
+}
+.botao:hover { /* Estilo ao passar o rato */
+  background-color: white;
+  border-radius: 50px;
+  border:white;
+}
+
+.imagens{
+  margin: 0%;
+  padding: 0%;
+
+}
+
+.projeto {
+  position: relative;
+  display: inline-block;
+}
+
+.projeto img {
+  margin: 10px;
+  width: 500px;
+  transition: filter 0.3s ease;
+  display: block;
+  border-radius: 16px;
+}
+
+.projeto .mensagem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 90px;
+  text-align: center;
+  padding: 10px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.projeto:hover img {
+  transform:scale(1.2);
+  filter: blur(3px);
+}
+
+.projeto:hover .mensagem {
+  opacity: 1;
+}
