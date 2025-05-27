@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <tr>
                     <td> <strong> Telefone </strong> </td>
                     <td> (51) 3491-2998 </td>
-                    <td> <center> <a href="https://www.instagram.com/e.m.e.f.dr.gastaoleao/"> <img src="Imagens/Icones/instagram.png" width="20px"/> </a> </center> </td>
+                    <td> <center> <a href="https://www.instagram.com/e.m.e.f.dr.gastaoleao/"> <img id="insta" src="Imagens/Icones/instagram.png"/> </a> </center> </td>
                 </tr>
                 <tr>
                     <td> <strong> Horário de Funcionamento </strong> </td>
